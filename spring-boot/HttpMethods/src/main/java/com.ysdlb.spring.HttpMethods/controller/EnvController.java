@@ -27,11 +27,11 @@ public class EnvController {
     @RequestMapping(method = RequestMethod.GET, path = "show")
     public String obtainEnvironment() {
         StandardServletEnvironment standardServletEnvironment = (StandardServletEnvironment) environment;
-        Map<String, Map<String, String>> map = new HashMap<>(8);
+        Map<String, Map<String, String>> map = new HashMap<String, Map<String, String>>(8);
         Iterator<PropertySource<?>> iterator = standardServletEnvironment.getPropertySources().iterator();
         while (iterator.hasNext()) {
             PropertySource<?> source = iterator.next();
-            Map<String, String> m = new HashMap<>(128);
+            Map<String, String> m = new HashMap<String, String>(128);
             String name = source.getName();
             Object o = source.getSource();
             if (o instanceof Map) {

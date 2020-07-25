@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <groupId>com.ysdlb.spring</groupId>
+    <groupId>com.ysdlb</groupId>
     <artifactId>demo</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
@@ -21,6 +21,7 @@
 
     <modules>
         <module>spring-boot</module>
+        <module>mybatisplus</module>
     </modules>
 
     <dependencies>
